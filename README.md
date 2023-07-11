@@ -1,4 +1,4 @@
-# Fuck tuya, Do not use
+# Fucking tuya shit
 
 ❗If the application you develop runs on the third-party application Tuya, is based on an older version of React-Native, and includes location functionality, you may need to use the deprecated react-native-maps dependency based on v0.14.0. Being compelled to start a new repository based on an older branch due to incompatibilities with newer versions of React and prop-types, it is advisable not to use older versions for application development and avoid using this dependency unless necessary.
 
