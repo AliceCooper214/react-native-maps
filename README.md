@@ -1,8 +1,8 @@
-# This is repo is used to fucking tuya which is old version
-
-## react-native-maps [![npm version](https://img.shields.io/npm/v/react-native-maps.svg?style=flat)](https://www.npmjs.com/package/react-native-maps)
+# react-native-maps [![npm version](https://img.shields.io/npm/v/react-native-maps.svg?style=flat)](https://www.npmjs.com/package/react-native-maps)
 
 React Native Map components for iOS + Android
+
+## ❗This repository is based on react-native-maps which version is v0.14.0, but is used in third-party fucking tuya based on older versions of React Native. Do not use it lightly.
 
 ## Installation
 
