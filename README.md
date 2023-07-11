@@ -2,7 +2,9 @@
 
 React Native Map components for iOS + Android
 
-## ❗This repository is based on react-native-maps which version is v0.14.0, which is used in fucking third-party tuya based on older versions of React Native. Do not use junk lightly, whether this or that.
+## fuck tuya, Do not use
+
+❗If you develop an application that runs on a third-party application Tuya, and is based on an old version of React-Native, and is used for positioning, then you may need to use the v0.14.0-based and deprecated react-native-maps dependency. Forced to start a new repository based on an old branch due to incompatibility with newer versions of React and prop-types. Therefore, if it is not necessary, do not use the old version to develop applications and this dependency.
 
 ## Installation
 
