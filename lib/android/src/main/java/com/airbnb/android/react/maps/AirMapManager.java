@@ -1,3 +1,13 @@
+/**
+ * 这是一段用于在React Native应用程序中创建和管理Google Maps组件实例的自定义视图管理器的Java代码。 
+ * AirMapManager 扩展了ViewGroupManager类，用于创建和管理 AirMapView 实例，AirMapView 是一个自定义视图，
+ * 使用 Google Maps SDK for Android 渲染地图组件。
+ * AirMapManager 类包含处理 AirMapView 组件的属性、事件和布局的方法。 
+ * ReactProp 注释用于定义可以从React Native中设置的属性。 RCTEventEmitter 用于向应用程序的JavaScript端发出事件。
+ * AirMapManager 类还从Google Maps SDK for Android导入各种类，
+ * 包括 GoogleMap、GoogleMapOptions、MapsInitializer、LatLng 和 MapStyleOptions。 这些类用于配置和渲染地图组件。
+ * 总的来说，这段代码是使用Google Maps SDK for Android实现在React Native应用程序中创建Google Maps组件的自定义视图管理器的实现。
+ */
 package com.airbnb.android.react.maps;
 
 import android.view.View;
@@ -295,8 +305,6 @@ public class AirMapManager extends ViewGroupManager<AirMapView> {
         context.getJSModule(RCTEventEmitter.class)
             .receiveEvent(view.getId(), name, data);
     }
-
-
 
     @Override
     public void onDropViewInstance(AirMapView view) {

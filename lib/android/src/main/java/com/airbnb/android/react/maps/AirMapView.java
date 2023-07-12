@@ -1,3 +1,10 @@
+/**
+ * 这是一个Java代码定义的自定义视图 AirMapView。该视图类继承了 MapView 类，
+ * 并实现了 GoogleMap.InfoWindowAdapter、GoogleMap.OnMarkerDragListener 和 OnMapReadyCallback 接口。
+ * GoogleMap.InfoWindowAdapter 接口用于自定义地图标记信息窗口的内容。 
+ * GoogleMap.OnMarkerDragListener 接口用于监听地图标记的拖拽事件。 OnMapReadyCallback 接口用于监听地图组件准备就绪的事件。
+ * 因此，AirMapView 类通过实现这些接口，可以自定义地图标记信息窗口的内容、监听地图标记的拖拽事件，并在地图组件准备就绪时执行相关操作。 
+ */
 package com.airbnb.android.react.maps;
 
 import android.app.Activity;
@@ -352,6 +359,21 @@ public class AirMapView extends MapView implements GoogleMap.InfoWindowAdapter,
         onDestroy();
     }
 
+    /**
+     * 这是一个名为 setRegion 的方法，用于设置地图的显示区域。
+     * 该方法接受一个 ReadableMap 对象作为参数，从中获取经度、纬度和经纬度跨度等信息，以确定地图的显示范围。
+     * 该方法首先检查 region 是否为 null，如果是，直接返回。
+     * 否则，通过 region 中的信息计算出一个 LatLngBounds 对象，该对象表示地图显示的范围。
+     * 如果当前地图视图的高度或宽度小于等于0，则将 bounds 存储在一个变量中，并将地图的缩放级别设置为10。
+     * 如果视图已经布局，则将地图的中心点移动到 bounds 所指定的区域，并将存储在变量中的 boundsToMove 设置为 null。
+     * 该方法首先检查 region 是否为 null ，如果是，直接返回。
+     * 否则，通过 region 中的信息计算出一个 LatLngBounds 对象，该对象表示地图显示的范围。
+     * 如果当前地图视图的高度或宽度小于等于0，则将 bounds 存储在一个变量中，并将地图的缩放级别设置为10。
+     * 如果视图已经布局，则将地图的中心点移动到 bounds 所指定的区域，并将存储在变量中的 boundsToMove 设置为 null 。
+     * 总之，setRegion 方法用于根据给定的地图区域信息设置地图的显示范围，并在必要时将地图的中心点移动到指定区域。
+     *
+     * @param region 包含经度、纬度和经纬度跨度等信息的 ReadableMap 对象
+     */
     public void setRegion(ReadableMap region) {
         if (region == null) return;
 
